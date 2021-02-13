@@ -1,12 +1,35 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title> no </title>
-  </head>
-  <body>
-    <p> hello world! </p>
-    <a href="https://www.youtube.com/watch?v=kiccFsEjZ2c">random link</a>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>придумайте название</title>
+    <!-- тут будет магия JavaScript -->
+    <style>
+        /* тут будут стили это CSS */
+        * { padding: 0; margin: 0; }
+        canvas { background: #eee; display: block; margin: 0 auto; }
+    </style>
+</head>
+<body>
+
+<canvas id="game" width="480" height="320"></canvas>
+
+<script>
+  // тут будет магия JavaScript
+  
+  // Создаем чистый холс
+  var canvas = document.getElementById("game");
+  var ctx = canvas.getContext("2d");
+
+  // Рисуем
+  ctx.beginPath();
+  ctx.rect(20, 40, 50, 50);
+  ctx.fillStyle = "#FF0000";
+  ctx.fill();
+  ctx.closePath();
+</script>
+
+</body>
 </html>
 
 
