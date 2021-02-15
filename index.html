@@ -1,32 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="utf-8" />
-    <title>no</title>
-    <!-- тут будет магия JavaScript -->
+    <title>Gamedev Canvas Workshop</title>
     <style>
-        /* тут будут стили это CSS */
-        * { padding: 0; margin: 0; }
-        canvas { background: #eee; display: block; margin: 0 auto; }
+    	* { padding: 0; margin: 0; }
+    	canvas { background: #eee; display: block; margin: 0 auto; }
     </style>
 </head>
 <body>
 
-<canvas id="game" width="480" height="320"></canvas>
+<canvas id="myCanvas" width="480" height="320"></canvas>
 
 <script>
-  // тут будет магия JavaScript
-  
-  // Создаем чистый холс
-  var canvas = document.getElementById("game");
-  var ctx = canvas.getContext("2d");
-
-  // Рисуем
-  ctx.beginPath();
-  ctx.rect(20, 40, 50, 50);
-  ctx.fillStyle = "#FF0000";
-  ctx.fill();
-  ctx.closePath();
+    const canvas = document.getElementById("myCanvas");
+    const ctx = canvas.getContext("2d");
+    ctx.beginPath();
+    ctx.rect(20, 40, 50, 50);
+    ctx.fillStyle = "#FF0000";
+    ctx.fill();
+    ctx.closePath();
+	// JavaScript код будем писать здесь
 </script>
 
 </body>
